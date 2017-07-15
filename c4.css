@@ -12,25 +12,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 8em;
+  font-size: 3.5em;
   color: #34bffc
 }
 
 .container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
+  width: 100%
 }
 
-.board-end {
-  background: lightgray;
-  position: relative;
-  z-index: 1;
-}
 
 .played {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .player-1 {
@@ -42,26 +38,40 @@ body {
 }
 
 .board {
-  height: 700px;
-  width: 700px;
+  height: 75%;
+  width: 75%;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 500px;
+  max-height: 500px;
   display: flex;
   flex-direction: column;
-  background-color: black;
 }
 
 .row {
   display: flex;
+  justify-content: space-around;
+  align-items: space-around;
   width: 100%;
+  height: 100%;
+  max-width: 
+}
+
+.dropRow {
+  display: flex;
+
 }
 
 .drop {
-  width: 100px;
-  height: 100px;
   background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4em;
+  font-size: 3em;
+  width: 100%;
+  height: 100%;
+  min-width: 50px;
+  min-height: 50px;
 }
 
 .drop:hover {
@@ -69,23 +79,25 @@ body {
   }
 
 .box {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   background-color: cornflowerblue;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+  min-width: 50px;
+  min-height: 50px;
 }
 
 .message { 
   width: 100%;
-  height: 75px;
   font-family: Helvetica;
-  font-size: 30px;
+  font-size: 1.5em;
   display: flex;
   color: #68a4d8;
   justify-content: center;
+  margin-bottom: 5px;
 }
 
 .new-game {
